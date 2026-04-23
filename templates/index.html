@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>🤖 AI Resume Analyzer</h1>
+            <p>Upload your resume and get instant AI-powered feedback!</p>
+        </div>
+
+        <div class="upload-box">
+            <form action="/" method="POST" enctype="multipart/form-data">
+                <div class="file-area">
+                    <span>📄</span>
+                    <h3>Upload Your Resume</h3>
+                    <p>PDF format only</p>
+                    <input type="file" name="resume" accept=".pdf" required>
+                </div>
+                <button type="submit">🔍 Analyze Resume</button>
+            </form>
+        </div>
+
+        <div class="footer">
+            <p>Built with ❤️ by <strong>Ankit Singh</strong> | Code With Ankit</p>
+        </div>
+    </div>
+
+</body>
+</html>
